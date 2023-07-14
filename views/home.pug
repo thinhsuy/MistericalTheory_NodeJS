@@ -1,0 +1,92 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title HomeWorks
+style.
+  body{
+  height: 100%;
+  width: 100%;
+  background: rgb(75,89,255);
+  background: radial-gradient(circle, rgba(75,89,255,1) 0%, rgba(52,235,202,1) 100%);
+  }
+  .header{
+  height: 10rem;
+  background-color: tan;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px black solid;
+  }
+  .logo{
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  border: 5px black solid;
+  }
+  .infor {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+  from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+  to {text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+  }
+  .content {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30rem;
+  }
+  .imgcontent{
+  height: 20rem;
+  width: 20rem;
+  cursor: pointer;
+  transition: all 2s;
+  border: 5px solid black;
+  }
+  .imgcontent:hover{
+  height: 30rem;
+  width: 30rem;
+  transform: rotate(360deg);
+  }
+  .element{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+.header
+  h1 I know you
+  img.logo(src='https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.6435-9/117391629_939319723209657_7265304097794535632_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_ohc=Lp6399lXQ7UAX-Ql--c&_nc_ht=scontent.fsgn8-1.fna&oh=b4dc4547eae57fbb605d2aef2fd89525&oe=6169C0F6')
+  h1 were a trouble
+.content
+  .element
+    .infor Top 1:
+    img#nmv.imgcontent(src='https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/121065514_930623554014110_5966325383861878941_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=6cS1XhWfQecAX8EtMOZ&_nc_ht=scontent.fsgn3-1.fna&oh=85b1602c0400b39cae28e23650e9df7b&oe=616BC587')
+    h1 Nguyen Minh Van
+  .element
+    .infor Top 2:
+    img#dmt.imgcontent(src='https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/149334362_758024671786947_8960816175806042567_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_ohc=MPERDngFuq8AX_3MLnk&_nc_ht=scontent-sin6-2.xx&oh=3178d2d73dd5cfda274df9061f499f6d&oe=61685C48')
+    h1 Duong Minh Tung
+  .element
+    .infor Top 3:
+    img#nnq.imgcontent(src='https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/64229426_132351197960313_6767064116965146624_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=HvA4CxU56PoAX_fhHO2&_nc_ht=scontent.fsgn3-1.fna&oh=98312efe1d830e25d147ec3280fba549&oe=616BA5FF')
+    h1 Nguyen Nhat Quynh
+script.
+  const nmv = document.querySelector("#nmv");
+  const dmt = document.querySelector("#dmt");
+  const nnq = document.querySelector("#nnq");
+  nmv.onclick=()=>{window.open("nmv", "_self");}
+  dmt.onclick=()=>{window.open("dmt", "_self");}
+  nnq.onclick=()=>{window.open("nnq", "_self");}
